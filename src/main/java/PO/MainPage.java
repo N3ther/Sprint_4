@@ -11,11 +11,10 @@ public class MainPage {
     private By menuButtonLocator(int index) {
         return By.xpath("//div[@id='accordion__heading-" + index + "']");
     }
+
     private By textLocator(int index) {
         return By.xpath("//div[@id='accordion__panel-" + index + "']/p");
     }
-
-
 
     public MainPage(WebDriver driver){
         this.driver = driver;
@@ -25,12 +24,9 @@ public class MainPage {
         driver.findElement(menuButtonLocator(index)).click();
     }
 
-
     public String getTextMenu(int index) {
         return driver.findElement(textLocator(index)).getText();
     }
-
-
 
     public void scrollBeforeClick() {
         WebElement element = driver.findElement(By.id("accordion__heading-0"));

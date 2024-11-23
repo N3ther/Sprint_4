@@ -36,7 +36,6 @@ public class MainPageTest {
     private final String expectedText;
     private int index;
 
-
     public MainPageTest(int index, String expectedText) {
 
         this.index = index;
@@ -57,7 +56,6 @@ public class MainPageTest {
 
         };
     }
-
 
     @Before
     public void setup() {
@@ -80,7 +78,6 @@ public class MainPageTest {
         // Проверка
         assertEquals(expectedText, actualText);
     }
-
 
     @After
     public void teardown() {

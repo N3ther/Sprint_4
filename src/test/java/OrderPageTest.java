@@ -22,7 +22,6 @@ public class OrderPageTest {
     private final String phoneNumber;
     private final String rentDuration;
     private final String rentPeriod;
-
     private static final String EXPECTED_TEXT_ORDERPLACED = "Заказ оформлен";
 
     public OrderPageTest(String firstName, String lastName, String address, String subwayStation, String phoneNumber, String rentDuration, String rentPeriod) {
